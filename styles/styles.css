@@ -18,7 +18,7 @@
 color: white;
   justify-content: center; 
   display: flex;
-  align-items: center
+  align-items: end;
 }
 
 .nav-img 
@@ -46,6 +46,8 @@ color: white;
 
 .package-text{
     color: blue;
+    width: 18 rem;
+  
 }
 
 .background-room
@@ -53,10 +55,56 @@ color: white;
     background-image: url('../assets/bg2.jpg');
   background-size: cover;
   background-position: center;
-  height: 400px; 
+  height: 590px; 
 }
 
 .room-text
 {
     color: white;
 }
+
+.background-amenities
+{
+     background-image: url('../assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px; 
+}
+
+.amenities-text
+{
+color: white;
+justify-content: center; 
+  align-items: center;
+  
+}
+
+
+.reverse-img
+{
+background-image: url(../assets/hamsterreserve.jpg);
+background-size: cover;
+  background-position: center;
+  height: 590px; 
+}
+
+.reverse-box
+{
+  width:60rem;
+    height: 15 rem;
+    background-color: #000324;
+    opacity: 80%;
+    margin-left: 50 rem;
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+
+.reverse-text
+{
+    color: white;
+    font-size:medium;
+    margin-bottom: 10%;
+
+}
+
