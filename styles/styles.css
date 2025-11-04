@@ -1,3 +1,62 @@
-.navbar{
+.navbar
+{
     background-color: #000324 ;
+}
+
+.background-img 
+{
+  background-image: url('../assets/header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px; 
+}
+
+
+
+.nav-text
+{
+color: white;
+  justify-content: center; 
+  display: flex;
+  align-items: center
+}
+
+.nav-img 
+{
+  height: 50px; /* adjust size */
+}
+
+.header-box
+{
+    width:60rem;
+    height: 15 rem;
+    background-color: #000324;
+    opacity: 80%;
+    margin: 9rem;
+    margin-left: 30 rem;
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+
+.header-text
+{
+    color: white;
+}
+
+.package-text{
+    color: blue;
+}
+
+.background-room
+{
+    background-image: url('../assets/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px; 
+}
+
+.room-text
+{
+    color: white;
 }
