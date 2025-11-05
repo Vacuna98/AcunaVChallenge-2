@@ -11,8 +11,6 @@
   height: 400px; 
 }
 
-
-
 .nav-text
 {
 color: white;
@@ -21,10 +19,10 @@ color: white;
   align-items: end;
 }
 
-.nav-img 
-{
-  height: 50px; /* adjust size */
-}
+
+.nav-img { height: 44px; }            /* logo size */
+.nav-link.nav-text { padding: .5rem .75rem; }
+
 
 .header-box
 {
@@ -42,8 +40,12 @@ color: white;
 .header-text
 {
     color: white;
+    display: flex;
+    justify-content: center;
 }
-
+.hamster-text{
+    
+}
 .package-text{
     color: blue;
     width: 18 rem;
@@ -56,11 +58,13 @@ color: white;
   background-size: cover;
   background-position: center;
   height: 590px; 
+  width:auto;
 }
 
 .room-text
 {
     color: white;
+    margin-top: 3%;
 }
 
 .background-amenities
@@ -78,8 +82,13 @@ display: block;
 justify-content: center; 
   align-items: center;
   margin-top: 4%;
-  
-  
+}
+
+.amenities-text2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 
@@ -87,20 +96,22 @@ justify-content: center;
 {
 background-image: url(../assets/hamsterreserve.jpg);
 background-size: cover;
-  background-position: cover;
+  background-position:cover;
   height: 590px; 
-  margin-left: 40vh;
-  margin-right: 40vh;
+  margin-left: 30vh;
+  margin-right: 30vh;
 }
 
 .reverse-box
 {
-  width: 100%;           
-  height: 200px;                  
-  background: rgba(20, 25, 60, 0.85);
-  margin: 0 auto;                
+   width: 62rem;
+    height: 10 rem;
     background-color: #000324;
     opacity: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+   
 }
 
 .reverse-text
@@ -109,7 +120,7 @@ background-size: cover;
 display: flex;
 justify-content: center; 
   align-items: center;
-  margin-top: 2%;
+  margin-bottom: 3rem;
 }
 
 .searchtext{
@@ -119,5 +130,50 @@ justify-content: center;
 .searchbox{
     display: flex;
     justify-content: center;
+    
 }
+
+.footerbox
+{           
+  height: 250px;                  
+  background: rgba(20, 25, 60, 0.85);
+  margin: 0 auto;                
+    background-color: #000324;
+    opacity: 100%;
+}
+
+.footer-logo{
+    margin-top:2%;
+     height: 80px;
+     width: 90px;
+     display:flex;
+     justify-content: center;
+     text-align: center;
+     margin-left: 45%;
+}
+
+.footer-text{
+    color:white;
+    margin-top: 1%;
+    margin-left: 35%
+}
+
+.footer-text2{
+    color:white;    
+    margin-top: 1%;
+    margin-left: 25%;
+}
+
+.package-margin{
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.button-style{
+    margin-left: 1rem;
+    margin-top: 4vh;
+}
+
+
 
