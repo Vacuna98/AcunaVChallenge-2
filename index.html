@@ -15,25 +15,36 @@
   <body>
     <!--                  NAVBAR                            -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid justify-content-center navbar">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav justify-content-center mx-auto">
-            <a class="nav-link nav-text" href="#">Overview</a>
-            <a class="nav-link nav-text" href="#">Rooms</a>
-            <a class="nav-link nav-text" href="#">Packages</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid navbar">
 
-            <a class="navbar-brand nav-text" href="#">
-              <img class="nav-img" src="./assets/Logo.png" alt="Logo" />
-            </a>
+ 
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <a class="nav-link nav-text" href="#">Amenities</a>
-            <a class="nav-link nav-text" href="#">Contact</a>
-            <a class="nav-link border nav-text" href="#">Reverse</a>
-          </div>
-        </div>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav justify-content-center mx-auto">
+        <a class="nav-link nav-text" href="#">Overview</a>
+        <a class="nav-link nav-text" href="#">Rooms</a>
+        <a class="nav-link nav-text" href="#">Packages</a>
+
+      
+        <a class="navbar-brand nav-text" href="#">
+          <img class="nav-img" src="./assets/Logo.png" alt="Logo" />
+        </a>
+
+        <a class="nav-link nav-text" href="#">Amenities</a>
+        <a class="nav-link nav-text" href="#">Contact</a>
+        <a class="nav-link border nav-text" href="#">Reverse</a>
       </div>
-    </nav>
+    </div>
+
+  </div>
+</nav>
 
     <!--             POOL BACKGROUND                   -->
     <div class="background-img">
@@ -61,18 +72,20 @@
 
     <!--                   WELCOME                       -->
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center g-4"> <!-- (g-4 -> adds consistent gap between columns on all sizes) -->
         <!-- Left column -->
-        <div class="col-md-6">
+        <div class=" col-12 col-md-6">
           <img
             src="./assets/hamsterhomejpg.jpg"
-            class="img-fluid" style="margin-left: 70px;"
+            class="img-fluid d-block mx-auto ms-md-5 hide-on-tablet" 
+        
+          
             alt="hamster eating"
           />
         </div>
 
         <!-- Right column -->
-        <div class="col-md-6 hamster-text">
+        <div class="col-12 col-md-6"> <!--col-12 -> image spans full width on mobile      col-md-6-> becomes half-width-->
           <h2>Welcome to a hamster's paradise</h2>
           <br />
           <p>
@@ -120,7 +133,7 @@
         <h2 class="text-center mb-5 room-text">Our Rooms</h2>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-md-12 col-lg-4 mb-4">
             <div class="card" style="width: 18rem">
               <img
                 src="./assets/room1.jpg"
@@ -138,7 +151,7 @@
             </div>
           </div>
 
-          <div class="col-4">
+          <div class="col-12 col-md-12 col-lg-4 mb-4">
             <div class="card" style="width: 18rem">
               <img
                 src="./assets/room2.jpg"
@@ -156,7 +169,7 @@
             </div>
           </div>
 
-          <div class="col-4">
+          <div class="col-12 col-md-12 col-lg-4 mb-4">
             <div class="card" style="width: 18rem">
               <img
                 src="./assets/room3.jpg"
@@ -177,6 +190,7 @@
         </div>
       </div>
     </div>
+    
 
     <!-- Package 1 -->
     <div class="container my-5">
@@ -289,7 +303,7 @@
     <br />
 
     <div class="reverse-img">
-      <div class="container">
+      <div class="container-fluid">
         <div class="reverse-box">
           <div class="row">
             <h2 class="reverse-text">Reserve a Room</h2>
@@ -304,7 +318,7 @@
                 required
               />
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-2">
               <label for="validationDefault05" style="color:white" class="form-label"
                 >Check-out</label
               >
@@ -315,7 +329,7 @@
                 required
               />
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-2">
               <label for="validationDefault05" style="color:white" class="form-label"
                 >Number of Guests</label
               >
@@ -326,7 +340,7 @@
                 required
               />
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-2">
               <label for="validationDefault05" style="color:white" class="form-label">Room</label>
               <input
                 type="text"
@@ -335,8 +349,8 @@
                 required
               />
             </div>
-            <div class="col-md-4">
-              <button class="btn btn-primary button-style" type="submit">
+            <div class="col-md-4 col-sm-2">
+              <button class="btn btn-primary button-style"  type="submit">
                 Check Availability
               </button>
             </div>
@@ -346,14 +360,14 @@
     </div>
     <br>
     <br>
-    <b
+    <br>
 
     <div class="footerbox">
       <div class="container">
         <div class="row">
        <img class="footer-logo" src="./assets/Logo.png" alt="Logo" />
-       <p class="footer-text">123 Sunflower Seed Rd., Cavia, California 95205</p>
-       <p class="footer-text2">©LA PETITE MAISON HOTELS LIMITED 1939-2018. ALL RIGHTS RESERVED.</p>
+       <p class="footer-text text-align: center">123 Sunflower Seed Rd., Cavia, California 95205</p>
+       <p class="footer-text2 text-align:center">©LA PETITE MAISON HOTELS LIMITED 1939-2018. ALL RIGHTS RESERVED.</p>
             
         </div>
       </div>

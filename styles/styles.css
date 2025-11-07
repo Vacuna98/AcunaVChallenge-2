@@ -1,6 +1,7 @@
 .navbar
 {
     background-color: #000324 ;
+    justify-items: space-evenly;
 }
 
 .background-img 
@@ -26,15 +27,15 @@ color: white;
 
 .header-box
 {
-    width:60rem;
+    width:65rem;
     height: 15 rem;
     background-color: #000324;
     opacity: 80%;
-    margin: 9rem;
-    margin-left: 30 rem;
+    margin: 5rem;
+    margin-left: 8rem;
     display: flex;
     justify-content: center;
-    padding: 70px;
+    padding: 60px;
 }
 
 .header-text
@@ -98,13 +99,11 @@ background-image: url(../assets/hamsterreserve.jpg);
 background-size: cover;
   background-position:cover;
   height: 590px; 
-  margin-left: 30vh;
-  margin-right: 30vh;
 }
 
 .reverse-box
 {
-   width: 62rem;
+   width: 93rem;
     height: 10 rem;
     background-color: #000324;
     opacity: 100%;
@@ -121,6 +120,12 @@ display: flex;
 justify-content: center; 
   align-items: center;
   margin-bottom: 3rem;
+ 
+}
+
+.reserve-check{
+    display: flex;
+    justify-content: left;
 }
 
 .searchtext{
@@ -136,8 +141,7 @@ justify-content: center;
 .footerbox
 {           
   height: 250px;                  
-  background: rgba(20, 25, 60, 0.85);
-  margin: 0 auto;                
+  background: rgba(20, 25, 60, 0.85);            
     background-color: #000324;
     opacity: 100%;
 }
@@ -155,13 +159,13 @@ justify-content: center;
 .footer-text{
     color:white;
     margin-top: 1%;
-    margin-left: 35%
+    text-align: center;
 }
 
 .footer-text2{
-    color:white;    
+   color:white;
     margin-top: 1%;
-    margin-left: 25%;
+    text-align: center;
 }
 
 .package-margin{
@@ -177,3 +181,245 @@ justify-content: center;
 
 
 
+.background-room,
+.background-amenities {
+    background-size: cover;
+    background-position: center;
+}
+
+.hide-on-tablet{
+    display:block;
+}
+
+.nav-img { height: 44px; }
+
+/* Tidy link spacing */
+.navbar .nav-link { padding: .5rem 1rem; }
+
+/* Optional: make sure links are readable on dark bg */
+.navbar .nav-link { color:#fff; }
+.navbar .nav-link:hover { color:#adb5bd; }
+
+
+
+/*                  Tablet                 */
+
+@media (max-width: 768px)
+{
+
+    body{
+    display:flex;
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    
+}
+
+.navbar .navbar-brand.mx-lg-4 { margin: 0 1.25rem; }
+
+
+
+
+
+.background-img 
+{
+    background-image: url('../assets/header.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 300px; 
+    margin-right: 1px;
+    margin-left: 1px;;
+}
+
+
+.header-box
+{
+    width: 40rem;
+    height: 5 rem;
+    background-color: #000324;
+    opacity: 80%;
+    margin: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.header-text
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+
+.hamster-home{
+    background-image: url(../assets/hamsterhomejpg.jpg);
+    
+    display:flex;
+    justify-items: flex-start;
+    padding: 3px;
+    margin-left: 0%;
+    align-items: left;
+}
+
+.background-room
+{
+    background-image: url('../assets/bg2.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 1700px; 
+    padding:80px;
+}
+
+.room-text
+{
+    color: white;
+    margin-top: 1%;
+    display: flex;
+    margin-left:70px ;   
+    
+}
+
+
+
+.package-text{
+    color: blue;
+    width: 18 rem;
+    
+}
+
+
+.background-amenities
+{
+    background-image: url('../assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+}
+
+.amenities-text
+{
+    color: white;
+    display: block;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 4%;
+}
+
+.amenities-text2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.fixed-picture{
+    position: relative;
+   justify-content: left;
+   text-align: left;
+}
+
+.reverse-box
+{
+    width: 45rem;
+    height: 10 rem;
+    background-color: #000324;
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.reverse-text
+{
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.reverse-img{
+    display: flex;
+     justify-content: flex-start;
+    align-items: left;
+
+
+
+}
+
+.searchtext{
+    color: white;
+}
+
+.searchbox{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerbox
+{           
+    height: 250px;                  
+    background: rgba(20, 25, 60, 0.85);            
+    background-color: #000324;
+    opacity: 100%;
+}
+
+.footer-logo{
+    margin-top:2%;
+    height: 80px;
+    width: 90px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 45%;
+}
+
+.footer-text{
+    color:white;
+    margin-top: 1%;
+    
+     text-align: center;
+}
+
+.footer-text2{
+    color:white;    
+    margin-top: 1%;
+     text-align: center;
+}
+
+.package-margin{
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.button-style{
+    margin-left: 1rem;
+    margin-top: 4vh;
+}
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 360px)
+{
+    
+    .hide-on-tablet{
+        display:none !important;
+    }
+
+
+
+}
