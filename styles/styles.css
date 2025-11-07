@@ -58,7 +58,7 @@ color: white;
     background-image: url('../assets/bg2.jpg');
   background-size: cover;
   background-position: center;
-  height: 590px; 
+  height: 630px; 
   width:auto;
 }
 
@@ -103,10 +103,10 @@ background-size: cover;
 
 .reverse-box
 {
-   width: 93rem;
-    height: 10 rem;
+   
+    
     background-color: #000324;
-    opacity: 100%;
+  
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -125,7 +125,7 @@ justify-content: center;
 
 .reserve-check{
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 .searchtext{
@@ -176,7 +176,7 @@ justify-content: center;
 
 .button-style{
     margin-left: 1rem;
-    margin-top: 4vh;
+    margin-top: 2rem;
 }
 
 
@@ -269,7 +269,7 @@ justify-content: center;
     background-image: url('../assets/bg2.jpg');
     background-size:cover;
     background-position: center;
-    height: 1700px; 
+    height: 2100px; 
     padding:80px;
 }
 
@@ -324,7 +324,7 @@ justify-content: center;
 
 .reverse-box
 {
-    width: 45rem;
+   
     height: 10 rem;
     background-color: #000324;
     opacity: 100%;
@@ -403,6 +403,10 @@ justify-content: center;
     margin-left: 1rem;
     margin-top: 4vh;
 }
+    .cards-container {
+      display: flex;
+      align-items: center; /* Centers cards vertically in a row layout */
+    }
 
 
 
@@ -416,10 +420,29 @@ justify-content: center;
 @media (max-width: 360px)
 {
     
-    .hide-on-tablet{
+    .hide-on-mobile{
         display:none !important;
     }
 
+    .header-box
+{
+    
+    height: 5 rem;
+    background-color: #000324;
+    opacity: 80%;
+    display: block;
+    justify-content: center;
+    align-items:left;
+    padding: 40px;
+}
+
+.background-room{
+    height:fit-content;
+}
+
+.background-amenities{
+    height:fit-content;
+}
 
 
 }
