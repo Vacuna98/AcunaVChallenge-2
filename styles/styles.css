@@ -424,16 +424,9 @@ justify-content: center;
         display:none !important;
     }
 
-    .header-box
+.header-box
 {
-    
-    height: 5 rem;
-    background-color: #000324;
-    opacity: 80%;
-    display: block;
-    justify-content: center;
-    align-items:left;
-    padding: 40px;
+  width:fit-content;
 }
 
 .background-room{
@@ -443,6 +436,12 @@ justify-content: center;
 .background-amenities{
     height:fit-content;
 }
+
+.cards-container {
+      display: flex;
+      align-items: center; 
+    }
+
 
 
 }
